@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/0039601055.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,200&family=Kaushan+Script&family=Libre+Baskerville:wght@700&family=Ranchers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo-inv.png" alt="Logo" class="header-logo"></a>
+        <nav class="nav-list">
+            <a class="a-nav" href="productos.html">Productos</a>
+            <a class="a-nav" href="artistas.html">Artistas</a>
+            <a class="a-nav" href="nosotros.html">Nosotros</a>
+            <a class="a-nav pag-actual" href="contacto.html">Contacto</a>
+        </nav>
+        <div class="header-cart">
+            <button class="btn-cart"><i class="fas fa-shopping-cart logo-cart"></i></button>
+            <span id="span-cart">{{contador}}</span>
+        </div>
+    </header>
+
+    <main class= "vue-cart">
+
+        <!-- Contenido del Dropdown-->
+        <div id="cartDropdown" class="dropdown-content">
+            <component :is="view"></component>
+        </div>
+    
+        <h1 class="h1-gral">Contacto</h1>
+        <hr>
+
+        <div class="div-contacto">
+            <form class="form-contacto">
+                <label for="firstname">Nombre: </label> 
+                <input type="text" name="firstname" placeholder="Ingrese su nombre aquí ...">
+
+                <label for="lastname">Apellido: </label> 
+                <input type="text" name="lastname" placeholder="Ingrese su apellido aquí ...">
+
+                <label for="email">Email: </label>  
+                <input type="email" name="email" placeholder="email@gmail.com ...">
+
+                <label for="city">Ciudad: </label>       
+                <input type="text" name="city" value="CABA"> 
+
+                <label for="birthdate">Fecha de Nacimiento: </label> 
+                <input type="date" name="birthdate">
+
+                <label for="mensaje">Mensaje: </label> 
+                <textarea name="mensaje" rows="8" placeholder="Ingrese su mensaje aquí ..."></textarea>
+
+                <input class="btn-form" type="submit" value="Enviar">
+            </form>
+            
+            <iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5315.28510934124!2d-58.41394843553982!3d-34.58985196516119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca824b97e16f%3A0x7b07e06e44019afb!2sAlto%20Palermo%20Shopping%2C%20Av.%20Santa%20Fe%203253%2C%20C1425%20CABA!5e0!3m2!1ses!2sar!4v1600736940563!5m2!1ses!2sar" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="links">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square i-footer"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square i-footer"></i></a>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fab fa-instagram-square i-footer"></i></a>
+        </div>
+
+        <p id="copyright">Copyright 2020 &copy; Joaquín Aliotta. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>    
+        
+</body>
+
+</html>

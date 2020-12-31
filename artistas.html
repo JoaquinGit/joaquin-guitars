@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistas</title>
+    <script src="https://kit.fontawesome.com/0039601055.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,200&family=Kaushan+Script&family=Libre+Baskerville:wght@700&family=Ranchers&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo-inv.png" alt="Logo" class="header-logo"></a>
+        <nav class="nav-list">
+            <a class="a-nav" href="productos.html">Productos</a>
+            <a class="a-nav pag-actual" href="artistas.html">Artistas</a>
+            <a class="a-nav" href="nosotros.html">Nosotros</a>
+            <a class="a-nav" href="contacto.html">Contacto</a>
+        </nav>
+        <div class="header-cart">
+            <button class="btn-cart"><i class="fas fa-shopping-cart logo-cart"></i></button>
+            <span id="span-cart">{{contador}}</span>
+        </div>
+    </header>
+
+    <main class="main-artistas vue-cart">
+
+        <!-- Contenido del Dropdown-->
+        <div id="cartDropdown" class="dropdown-content">
+            <component :is="view"></component>
+        </div>
+
+        <h1 id="top" class="h1-gral">Artistas</h1>
+        <hr>
+        
+        <div class="div-artistas">
+            
+            <section class="sec-art">
+
+                <img class="img-artist" src="img/artistas/zakk-w.jpg" alt="">
+
+                <h3>Zakk Wylde</h3>
+
+                <p class="p-artist">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eos, accusantium at odio consequatur cupiditate ipsum saepe officia accusamus dolore tempora ullam fugiat, amet consectetur magnam minima maiores dolorem obcaecati soluta sunt, culpa facilis eius architecto. Incidunt corrupti, deserunt et voluptate praesentium adipisci, consequuntur laboriosam itaque magnam aut aperiam asperiores.</p>
+
+            </section>
+
+            <section class="sec-art">
+
+                <img class="img-artist" src="img/artistas/stevie.jpg" alt="">
+
+                <h3>Stevie Ray Vaughan</h3>
+
+                <p class="p-artist">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat ad aliquam totam dignissimos distinctio modi consequuntur sed? Voluptate mollitia distinctio maxime quidem aperiam nihil iste voluptates iusto, totam, tempora recusandae culpa aliquam provident, natus ducimus autem delectus id nulla voluptatibus tempore! Veritatis asperiores hic, ab quae qui quaerat voluptatum ipsa.</p>
+
+            </section>
+
+            <section class="sec-art">
+
+                <img class="img-artist" src="img/artistas/slash.jpg" alt="">
+
+                <h3>Slash</h3>
+
+                <p class="p-artist">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nesciunt maxime doloremque labore aspernatur pariatur quisquam asperiores alias numquam laboriosam, porro provident tenetur quod impedit quibusdam magnam cumque ex consequuntur quam rem laudantium amet non in. Eum animi vel perspiciatis fugiat officia saepe delectus, temporibus adipisci. Ducimus temporibus commodi nobis!</p>
+            </section>
+
+            <section class="sec-art">
+
+                <img class="img-artist" src="img/artistas/jimmy.jpg" alt="">
+
+                <h3>Jimmy Page</h3>
+
+                <p class="p-artist">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit voluptas consectetur autem distinctio earum fuga quaerat eos, ad provident saepe enim dolorum beatae maxime? Nemo dolor blanditiis eos fuga debitis vitae, quo explicabo at aliquam quisquam magnam iste natus voluptatem unde architecto facere repellendus sed quas recusandae doloribus eius ea!</p>
+            </section>
+
+        </div>
+
+        <a href="#top" class="a-totop">Volver al inicio</a>
+        
+    </main>
+
+    <footer>
+        <div class="links">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square i-footer"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square i-footer"></i></a>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fab fa-instagram-square i-footer"></i></a>
+        </div>
+
+        <p id="copyright">Copyright 2020 &copy; Joaquín Aliotta. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

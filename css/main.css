@@ -1,0 +1,836 @@
+* {
+    font-family: 'Roboto', sans-serif;
+ }
+
+html {
+     
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 12rem 0rem 0rem 0rem;
+    font-size: 1.8rem;
+    background-color: rgb(202, 202, 202); 
+}
+
+/**************** Header *************************************/
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    border-bottom: 0.1rem solid rgb(133, 99, 8);
+    background-image: url("../img/fondos/header-fondo1.jpeg");
+    background-position: 30% 27%;
+    background-size: cover;
+    border-radius: 0rem 0rem 1rem 1rem;
+    height: 12rem;
+}
+
+.header-logo {
+    width: 12rem;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 3rem;
+    width: 100%;
+}
+
+.a-nav {
+    padding: 1rem 1.4rem; 
+    margin: 1rem 0rem 0rem 1rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.582);
+    border-radius: 2rem;
+}
+
+.a-nav:hover {
+    background: rgb(170, 125, 53);
+    border-radius: 4rem;
+    border-color: rgb(182, 125, 32);
+    color: rgb(0, 0, 0);
+
+    transform:translateY(0.2rem);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.pag-actual {
+    border: 0.3rem solid rgb(170, 125, 53);
+    border-radius: 4rem;
+}
+
+/*********** Cart ***************/
+.header-cart {
+    
+    display: flex;
+    align-self: flex-end;
+    margin-right: 2rem;
+    margin-bottom: 0.5rem;
+
+    height: 5rem;
+    width: 6rem;
+}
+
+.btn-cart {
+    display: flex;
+    justify-self: flex-end;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    width: 5rem;
+    height: 5rem;
+    margin-right: 3rem;
+    margin-top: 0rem;
+    outline: none;
+}
+
+.logo-cart {
+
+    align-self: flex-end;
+    font-size: 3rem;
+    color: rgb(172, 123, 44);
+    z-index: 1;
+}
+
+.logo-cart:hover {
+    color: #f5d109;
+    cursor: pointer;
+}
+
+#span-cart {
+    align-self: flex-start;
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: white;
+
+    margin-top: 0.8rem;
+    margin-left: -5.8rem;
+    
+}
+
+/************* Dropdown *************************/
+.dropdown-content {
+    display: none;
+    position: fixed; /* fija en el vh */
+    background-color: #f1f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 1rem;
+    z-index: 1;
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+.show {
+    display: block;
+}
+ 
+/****** tabla Vue *****/
+.table-dropdown td{
+    border-bottom: solid 0.1rem grey;
+    padding: 0.6rem 0.6rem;
+    
+}
+
+.table-dropdown thead th{
+    text-align: start;
+    column-span: 4;
+    border: solid 0.2rem rgb(151, 101, 7);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: rgb(175, 173, 172);
+}
+
+.table-dropdown tbody tr:hover {background-color: #ddd;}
+
+.table-dropdown .unidades {
+    text-align: end;
+}
+
+/************ Fin Dropdown ****************/
+#h1-home {
+    margin: 4rem auto 2rem auto;
+    padding: 0.8rem 1.5rem;
+    border-radius: 1rem;
+    border: 0.2rem solid rgb(133, 99, 8);
+    font-family:'Libre Baskerville', serif;
+    font-size: 5rem;
+    color: rgb(170, 125, 53);
+    background-color: rgb(26, 24, 24);
+}
+
+#h1-home span{
+    font-family:'Kaushan Script', cursive;
+    color: rgb(168, 165, 154);
+}
+
+.h1-gral {
+    font-family:'Kaushan Script', cursive;
+    font-size: 4rem;
+    text-align: center;  
+}
+
+.h3-home {
+    background-color: rgba(165, 156, 143, 0.794);
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 2.8%;
+
+}
+
+/******************* Index ***********************************/
+.main-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {   
+    width: 90%;
+    height: 0.2rem;
+    color: rgb(167, 164, 163);
+}
+
+.sec-home {
+    display:flex;
+    flex-direction: column;
+    align-items:center; 
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2.6%;
+}
+
+.p-guitars {
+    max-width: 1400px;
+}
+
+.img-guitars {
+    width: 400px;
+}
+
+.img-bodyshapes {
+    width: 600px;
+}
+
+.home-videos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 2rem 0rem;
+}
+
+#iframe-zakk, #iframe-sultans {
+    margin-left: 3rem;
+}
+
+.img-guitars, .img-bodyshapes, #flyv-collage {
+    border-radius: 1rem;
+    margin-top: 1.7rem;
+    margin-bottom: 2rem;
+}
+
+/************ Productos *************************************/
+.container-prod {
+
+    display: grid;
+    grid-template-areas: 
+    "m m m"
+    "p1 p2 a"
+    "p3 p4 ."
+    "p5 . .";
+
+    padding: 0% 1% 1% 1%;
+    grid-gap: 2.5rem 0rem;
+}
+
+.marcas {
+    grid-area: m;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.logos-marcas {
+    width: 120px;
+    margin: 1% 2% 2% 2%;
+}
+
+[class*="prod-"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.1rem solid grey;
+    border-radius: 1rem;
+    padding-top: 1.5rem;
+    background-color: darkgrey;
+    max-width:80%;
+}
+
+.prod-1 {
+    grid-area: p1;
+}
+
+.prod-2 {
+    grid-area: p2;
+}
+
+.prod-3 {
+    grid-area: p3;
+}
+
+.prod-4 {
+    grid-area: p4;
+}
+
+.prod-5 {
+    grid-area: p5;
+}
+
+.prod-1,.prod-3, .prod-5 {
+    max-width: 75%;
+}
+
+.nombre-prod {
+    font-size: 1.8rem;
+    padding: 0rem 1rem;
+    max-width: 400px;
+}
+
+.img-prod {
+    width: 320px;
+    max-width: 90%;
+    border-radius: 1rem;
+}
+
+.p-precio {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.781);
+    font-weight: bold;
+    border: 0.2rem solid rgb(121, 100, 14);
+    background-color: rgba(66, 66, 64, 0.678);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+[class*="btn-prod"] {
+    margin-bottom: 2rem;
+    border: solid 0.5rem rgba(202, 146, 26, 0.972);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+[class*="btn-prod"]:hover {
+    cursor: pointer;
+}
+
+
+/******** Aside **********/
+.aside-prod {
+    grid-area: a;
+    justify-self: end;
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 0.2rem solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-image: url("../img/productos/emg-pickups/fondo-emg.jpg");
+    background-position: 46% 50%;
+    background-size: cover;
+
+}
+
+[class*="publi-"] {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;	
+}
+
+.emg-logo {
+    width: 260px;
+    max-width: 100%;
+    margin-bottom: 5%;
+}
+
+.h5-publi {
+    color: white;
+    background: rgba(0, 0, 0, 0.582);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.img-publi {
+    width: 230px;
+    border-radius: 1rem;
+    max-width: 100%;
+}
+
+
+/************** Artistas ************************************/
+.main-artistas {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-artistas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sec-art { 
+    margin-left: 3%; 
+    margin-top: 2rem;
+    max-width: 36%; 
+}
+
+.p-artist {
+    width: 75%;
+}
+
+.img-artist {
+    width: 500px;
+    max-width: 100%; 
+}
+
+/***************** Nosotros *************************************/
+.div-nos {
+    display: flex;
+    min-height: calc(100vh - 12rem - 13rem);
+}
+
+.div-slider {
+    width: 50%;
+    overflow: hidden;
+    margin-left: 2%;
+    
+}
+
+.div-slider ul {
+    display: flex;
+    width: 400%;
+    padding: 0;
+    animation: cambio 15s infinite alternate;
+}
+
+.div-slider li {
+    width: 100%;
+    list-style: none;
+
+}
+
+.div-slider img {
+    width: 100%;
+    max-width: 1000px;
+}
+
+@keyframes cambio {
+
+    0% {margin-left: 0%;}
+    17% {margin-left: 0%;} 
+
+    30% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    55% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    87% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+.div-locales {
+    margin: 0% 0% 0% 2%;
+    width: 40%;
+}
+
+/**************** Contacto **************************************/
+.div-contacto {
+    display: flex;
+    justify-content: center; 
+    max-width: 100%;
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+    background-image: url("../img/fondos/form-fondo.jpg");
+    background-position: 50%;
+    background-size: cover;
+
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+label {
+    font-size: 1.5rem;
+    margin: 0rem auto 0rem 1.5rem;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.582);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+input, textarea {
+    margin: 1rem 1.5rem;
+}
+
+.btn-form {
+    margin-top: 1.7rem;
+    width: 30%;
+    align-self: center;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: white;
+    background-color: rgb(80, 77, 77);
+    border-radius: 1rem;
+}
+
+.btn-form:hover {
+   transform: scale(1.2, 1.2);
+   transition: all 0.2s ease-in;
+
+}
+
+.iframe-map {
+    border-radius: 2.5rem;
+    padding: 1.5rem;
+    width: 40%;
+}
+
+
+/************  Footer ****************************************/ 
+footer {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 1rem 1rem 0rem 0rem;
+
+    background-image: url("../img/fondos/header-fondo1.jpeg");
+    background-position: 30% 72%;
+    background-size: cover;
+    color:  rgb(255, 255, 255);
+
+    margin-top: 3%;
+    height: 11rem;
+    width: 100%;  
+}
+
+
+.links {
+    margin: 1rem 0rem 0rem 2rem;
+}
+
+#copyright {
+    align-self: flex-end;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+
+    font-size: 1.6rem;
+}
+
+.i-footer {
+    color: rgb(209, 138, 23);
+    font-size: 3.5rem;
+    margin-right: 0.8rem;
+}
+
+.i-footer:hover {
+    color: rgb(228, 206, 15);
+
+    transform: translateY(-0.3rem);
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    
+}
+
+.a-totop {
+    justify-self: flex-end;
+    text-decoration: none;
+    margin: 2rem auto;
+    padding: 0.8rem 1.5rem;
+    border-radius: 1rem;
+    border: 0.2rem solid rgb(133, 99, 8);
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3rem;
+    color: rgb(170, 125, 53);
+    background-color: rgb(26, 24, 24);
+}
+
+/*********** GENERALES **************************************/
+.img-guitars, .img-bodyshapes, .img-artist, #flyv-collage, #iframe-zakk, #iframe-nomore, #iframe-clapton, #iframe-sultans {
+    
+    border-radius: 0.5rem;
+    max-width: 100%;
+}
+
+/************ Media Queries ***********************************/
+@media (max-width: 1024px) { 
+
+    /*********** Header ********/
+    .nav-list {
+
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: flex-start;
+
+        padding-left: 0.5rem;    
+    }
+
+    .a-nav {
+        padding: 0.5rem 0.7rem; 
+        align-self: center; 
+        margin: 0.5rem;
+    }
+
+    /************** Index ***********/
+    .home-videos {
+        flex-direction: column;
+    }
+
+    #iframe-zakk, #iframe-sultans {
+        margin-top: 3rem;
+        margin-left: 0rem;
+    }
+
+    /************** Artistas ***********/
+    .p-artist {
+        width: 95%;
+    }
+
+    /************** Contacto *************/
+    .div-contacto {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form-contacto {
+        width: 80%;   
+
+    }
+    .iframe-map {
+      
+        width: 80%;
+        height: 25rem;
+    }
+
+    /**************** Nosotros ***************/
+    .div-nos {
+        flex-direction: column;
+    }
+    .div-slider {
+        width: 90%;
+        margin: auto;
+    }
+    .div-locales {
+        width: 80%;
+        margin-left: 5%;
+    }
+}
+
+/*************** Landscape **************/
+@media (max-width: 1024px) and (orientation: landscape) {
+
+    body {
+        margin-top: 7rem;
+    }
+
+    /********** Header*****************/
+    header {
+        flex-wrap: nowrap;
+        height: 7rem;
+    }
+
+    .header-logo {
+        width: 7rem;
+    }
+
+    .nav-list {
+        font-size: 2rem;  
+    }
+}
+
+@media (max-width: 720px) {
+
+    /************* Header ***************/
+    .nav-list {
+        font-size: 1.8rem;
+    }    
+
+    /************* Index **************/
+    .h3-home {
+        font-size: 2rem;
+
+    }
+
+    /************* Artistas ************/
+    .sec-art {
+       min-width: 68%;
+    }
+
+    .sec-art { 
+        max-width: 80%; 
+    }
+
+    /********* Productos ****************/
+    .container-prod {
+
+        grid-template-areas: 
+        "m m"
+        "p1 p2"
+        "p3 p4"
+        "p5 ."
+        "a a";
+        
+        width: 90%;
+        align-self: center;
+        grid-column-gap: 0.3rem;
+    }
+
+    [class*="prod-"] {
+        max-width: 90%;
+    }
+
+    .aside-prod {
+    
+        justify-self: center;
+        width: 60%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        border: 0.2rem solid black;
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+
+
+    /********* GENERALES *****************/
+    .p-guitars {
+        font-size: 1.6rem;
+    }
+
+    .a-totop {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 720px) and (orientation: landscape) {
+
+    body {
+        margin-top: 7rem;
+    }
+
+    /*************** Header ************/
+    .nav-list {
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 1.6rem;
+    }
+
+    .a-nav {
+        margin: 0.2rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {  
+
+    body {
+        margin-top: 9rem;
+    }
+
+    /************** Header **************/
+    header {
+        height: 9rem;
+    }
+
+    .nav-list {
+        font-size: 1.6rem;
+    }    
+
+    .header-logo {
+        width: 9rem;
+    }
+
+    .pag-actual {
+        border: 0.15rem solid rgb(170, 125, 53);
+    }
+
+    /************ Index **************/
+    #h1-home {
+        font-size: 3.6rem;     
+    }
+
+    /************** Productos *************/
+    .logos-marcas {
+        width: 90px;
+        margin: 1% 2% 2% 2%;
+    }
+
+    [class*="btn-prod"] {
+        font-size: 1.1rem;
+    }
+
+    .p-precio {
+        font-size: 1.5rem;
+    }
+
+    /*********** GENERALES **************/
+    .p-guitars, .p-artist {
+        font-size: 1.5rem;
+    } 
+
+    .h1-gral {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 360px) {
+
+    /*********** Header ************/
+    .nav-list {
+        justify-content: flex-start;
+        font-size: 1.3rem;
+    }    
+    .a-nav {
+        margin: 0.3rem 0rem;
+    } 
+
+    /************** Index *************/
+    #h1-home {
+        font-size: 2.8rem;      
+    }
+
+    .h1-gral {
+        font-size: 2rem;
+    }
+}

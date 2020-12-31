@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <script src="https://kit.fontawesome.com/0039601055.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,200&family=Kaushan+Script&family=Libre+Baskerville:wght@700&family=Ranchers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo-inv.png" alt="Logo" class="header-logo"></a>
+        <nav class="nav-list">
+            <a class="a-nav" href="productos.html">Productos</a>
+            <a class="a-nav" href="artistas.html">Artistas</a>
+            <a class="a-nav pag-actual" href="nosotros.html">Nosotros</a>
+            <a class="a-nav" href="contacto.html">Contacto</a>
+        </nav>
+        
+        <div class="header-cart">
+            <button class="btn-cart"><i class="fas fa-shopping-cart logo-cart"></i></button>
+            <span id="span-cart">{{contador}}</span>
+        </div>
+        
+    </header>
+
+    <main class="main-nos vue-cart">
+        
+        <!-- Contenido del Dropdown -->
+        <div id="cartDropdown" class="dropdown-content">
+            <component :is="view"></component>
+        </div>
+        
+        
+        <h1 class="h1-gral">Sobre nosotros</h1>
+        <hr>
+       
+        <div class="div-nos">
+            <div class="div-slider">
+                <ul>
+                    <li><img class="img-locales" src="img/nosotros/local1.jpg" alt=""></li>
+                    <li><img class="img-locales" src="img/nosotros/local2.jpg" alt=""></li>
+                    <li><img class="img-locales" src="img/nosotros/local3.jpg" alt=""></li>
+                    <li><img class="img-locales" src="img/nosotros/local4.jpg" alt=""></li>    
+                </ul>
+            </div>
+
+            <div class="div-locales">
+                <h3>Nuestros locales</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus explicabo vel cum sit ipsa earum et officiis, velit consequuntur neque nulla provident sed non amet impedit molestiae sunt vitae placeat dolorum asperiores atque culpa autem iusto enim! Quibusdam vitae fugiat, ipsam, ullam temporibus repudiandae nesciunt modi minima iste autem itaque.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi officia debitis quas nam, blanditiis non dolore. Facilis sit fugiat ex quam suscipit. Ut unde ea at quidem quo repudiandae incidunt obcaecati. Vel ducimus obcaecati pariatur laborum autem praesentium necessitatibus. Unde!
+                </p>
+            </div>
+        </div>   
+
+    </main>
+
+    <footer>
+        <div class="links">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square i-footer"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square i-footer"></i></a>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fab fa-instagram-square i-footer"></i></a>
+        </div>
+
+        <p id="copyright">Copyright 2020 &copy; Joaquín Aliotta. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

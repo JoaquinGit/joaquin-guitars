@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <script src="https://kit.fontawesome.com/0039601055.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,200&family=Kaushan+Script&family=Libre+Baskerville:wght@700&family=Ranchers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo-inv.png" alt="Logo" class="header-logo"></a>
+        <nav class="nav-list">
+            <a class="a-nav pag-actual" href="productos.html">Productos</a>
+            <a class="a-nav" href="artistas.html">Artistas</a>
+            <a class="a-nav" href="nosotros.html">Nosotros</a>
+            <a class="a-nav" href="contacto.html">Contacto</a>
+        </nav>
+
+        <!-- header-cart -->
+        <div class="header-cart">
+            <button class="btn-cart"><i class="fas fa-shopping-cart logo-cart"></i></button>
+            <span id="span-cart">{{contador}}</span>
+        </div>
+    </header>
+
+    <main class="container-prod vue-cart">
+
+        <!-- Contenido del Dropdown-->
+        <div id="cartDropdown" class="dropdown-content">
+            <component :is="view"></component>
+        </div>
+
+        <div class="marcas">
+            <img class="logos-marcas" src="img/productos/logos-marcas/gibson-logo.png" alt="">
+            <img class="logos-marcas" src="img/productos/logos-marcas/dean-logo.svg" alt="">
+            <img class="logos-marcas" src="img/productos/logos-marcas/fender-logo.svg" alt="">
+        </div>
+
+        <div class="prod-1" ref="prod1">
+            <img class="img-prod" src="img/productos/gibson-gold-top-2017.jpg" alt="">
+            <h3 class="nombre-prod">Gibson Les Paul Classic Gold Top 2017</h3>
+            <p class="p-precio">$ 300.067,00</p>  
+            <button class="btn-prod1" @click="addProd">+ Añadir al carro</button> 
+        </div>
+        <div class="prod-2" ref="prod2">
+            <img class="img-prod" src="img/productos/gibson-sg-standard.jpg" alt="">
+            <h3 class="nombre-prod">Gibson SG Standard</h3>
+            <p class="p-precio">$ 378.663,99</p>
+            <button class="btn-prod2" @click="addProd">+ Añadir al carro</button>
+        </div>
+        <div class="prod-3">
+            <img class="img-prod" src="img/productos/dean-dimebag-fbd.jpg" alt="">
+            <h3 class="nombre-prod">Dean Dimebag Far Beyond Driven ML</h3>
+            <p class="p-precio">$ 216.599,00</p>
+            <button class="btn-prod3" @click="addProd">+ Añadir al carro</button>
+        </div>
+        <div class="prod-4">
+            <img class="img-prod" src="img/productos/dean-razorback.jpeg" alt="">
+            <h3 class="nombre-prod">Dean Razorback Classic Black</h3>
+            <p class="p-precio">$ 80.789,43</p>
+            <button class="btn-prod4" @click="addProd">+ Añadir al carro</button>
+        </div>
+        <div class="prod-5">
+            <img class="img-prod" src="img/productos/fender-classic-70.jpg" alt="">
+            <h3 class="nombre-prod">Fender Stratocaster Classic Series 70</h3>
+            <p class="p-precio">$ 178.650,00</p>
+            <button class="btn-prod5" @click="addProd">+ Añadir al carro</button>
+        </div>
+
+        <aside class="aside-prod">
+            <img class="emg-logo" src="img/productos/emg-pickups/emg-logo.png" alt="">
+
+            <div class="publi-1">
+                <h5 class="h5-publi">EMG Zakk Wylde 81/85</h5>
+                <img class="img-publi" src="img/productos/emg-pickups/emg-zakk.jpg" alt="">
+                
+            </div>
+            <div class="publi-2">
+                <h5 class="h5-publi">EMG JH James Hetfield Signature</h5>
+                <img class="img-publi" src="img/productos/emg-pickups/emg-hetfield.jpg" alt="">
+
+            </div>
+        </aside>
+            
+    </main>
+
+    <footer>
+        <div class="links">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square i-footer"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square i-footer"></i></a>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fab fa-instagram-square i-footer"></i></a>
+        </div>
+
+        <p id="copyright">Copyright 2020 &copy; Joaquín Aliotta. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    
+</body>
+
+</html>

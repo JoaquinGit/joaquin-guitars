@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://kit.fontawesome.com/0039601055.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,200&family=Kaushan+Script&family=Libre+Baskerville:wght@700&family=Ranchers&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=David+Libre&family=Roboto&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <a class="a-logo" href="index.html"><img class="header-logo" src="img/logo-inv.png" alt="Logo" class="header-logo"></a>
+        <nav class="nav-list">
+            <a class="a-nav" href="productos.html">Productos</a>
+            <a class="a-nav" href="artistas.html">Artistas</a>
+            <a class="a-nav" href="nosotros.html">Nosotros</a>
+            <a class="a-nav" href="contacto.html">Contacto</a>
+        </nav>
+        <div class="header-cart">
+            <button class="btn-cart"><i class="fas fa-shopping-cart logo-cart"></i></button>
+            <p id="span-cart">{{contador}}</p>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="main-home vue-cart">
+
+        <!-- Contenido del Dropdown-->
+        <div id="cartDropdown" class="dropdown-content">
+            <component :is="view"></component>
+        </div>
+
+        <h1 id="h1-home">ICONIC <span>guitars</span></h1>
+        <hr>
+        <section class="sec-home">
+            <h3 class="h3-home">Guitar Body Shapes</h3>
+            <p class="p-guitars">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores omnis consequuntur rem magnam provident doloribus delectus odio magni qui veritatis eius, nobis obcaecati laborum veniam cum voluptate atque dolore, at quo iste ex soluta? Ducimus tempore aspernatur possimus asperiores quibusdam, dolorum odit fugit tempora itaque nihil non consequuntur officia dolorem eveniet unde dicta assumenda eos praesentium? Eaque cum dolor enim!
+
+            </p>
+
+            <img class="img-bodyshapes" src="img/home/guitar-body-shapes.jpg" alt="Body Shapes">
+
+            <p class="p-guitars">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi aspernatur cupiditate asperiores quia nulla eveniet. Accusantium quod soluta corporis consequuntur modi nihil, fuga dignissimos sequi perspiciatis vel maxime tempora eligendi rerum vero atque corrupti illum quibusdam veniam eos quos. Illum sequi voluptatum asperiores nihil, libero nostrum tempore pariatur corporis perspiciatis veniam aliquid suscipit debitis nisi cumque maxime minus doloremque possimus. Aliquam temporibus culpa, beatae quae cum, odit aspernatur cupiditate corrupti inventore placeat explicabo laborum voluptatem. Illum, vel! Error nulla veniam exercitationem aut nihil consequuntur expedita optio explicabo nam magnam minus, debitis repellat cum possimus! Dolores doloribus deleniti quibusdam? Aspernatur.</p>
+        </section>
+
+        <section  class="sec-home">
+            <h3 class="h3-home">Les Paul</h3>
+
+            <img class="img-guitars" src="img/home/les-paul-classic.jpg" alt="Les Paul">
+
+            <p class="p-guitars">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis voluptatem, sed natus repudiandae odio accusamus quae, eligendi earum amet nobis veritatis magnam fugiat aliquid a. Laborum veniam fugiat ratione quis quidem quo eveniet possimus officia commodi eaque iste non exercitationem et, dolorem cupiditate eligendi reprehenderit nemo dolorum incidunt labore error hic, explicabo eum sequi. Consequatur quibusdam praesentium, error hic repudiandae odit, pariatur alias harum facere provident ipsum exercitationem cupiditate repellat quis, culpa est quidem. Optio quas voluptates quaerat exercitationem perspiciatis tempora maiores similique iusto nam fugiat, asperiores magnam dolorum distinctio perferendis quis minima nihil molestias rerum voluptatum pariatur. </p>
+
+            <div class="home-videos">
+
+                <iframe id= "iframe-nomore" width="560" height="315" src="https://www.youtube.com/embed/CprfjfN5PRs?start=210" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+
+                <iframe id="iframe-zakk" width="350" height="263" src="https://www.youtube.com/embed/BdA4ciUrH-k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+            </div>
+
+            <p class="p-guitars">Earum dolores rerum saepe officiis odit facilis tempore, sapiente, neque dolore nam quo? Rerum sunt vero itaque soluta nihil delectus nulla architecto aliquam officiis distinctio. Quidem rem voluptatem tempora vel. Dolores soluta sapiente consectetur porro harum sit enim minima? Pariatur sint, odio, odit labore adipisci soluta reprehenderit harum quaerat consequatur nisi ex molestias in similique? Laborum voluptatum, id, hic unde aut quis sit aspernatur quia consequatur, pariatur vel repellendus officia explicabo facilis soluta ipsum amet. Odio enim laudantium blanditiis aliquam. Minima fugiat aliquid aperiam ipsam rem numquam eum exercitationem nesciunt, ipsa minus enim dolore ullam quibusdam! Cumque deleniti esse commodi dolor.</p>
+        </section>
+        
+        <section class="sec-home">
+            <h3 class="h3-home">Stratocaster</h3>
+
+            <img class="img-guitars" src="img/home/stratocaster.jpg" alt="Stratocaster">
+
+            <p class="p-guitars">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis voluptatem, sed natus repudiandae odio accusamus quae, eligendi earum amet nobis veritatis magnam fugiat aliquid a. Laborum veniam fugiat ratione quis quidem quo eveniet possimus officia commodi eaque iste non exercitationem et, dolorem cupiditate eligendi reprehenderit nemo dolorum incidunt labore error hic, explicabo eum sequi.Consequatur quibusdam praesentium, error hic repudiandae odit, pariatur alias harum facere provident ipsum exercitationem cupiditate repellat quis, culpa est quidem. Optio quas voluptates quaerat exercitationem perspiciatis tempora maiores similique iusto nam fugiat, asperiores magnam dolorum distinctio perferendis quis minima nihil molestias rerum voluptatum pariatur. Earum dolores rerum saepe officiis odit facilis tempore, sapiente, neque dolore nam quo? Rerum sunt vero itaque soluta nihil delectus nulla architecto aliquam officiis distinctio. Quidem rem voluptatem tempora vel.</p>
+
+            <div class="home-videos">   
+
+                <iframe id="iframe-clapton" width="560" height="315" src="https://www.youtube.com/embed/bmlNAKyJ0WE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <iframe id="iframe-sultans" width="424" height="315" src="https://www.youtube.com/embed/Z4Hzjca9rkk?start=144" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>                 
+
+            <p class="p-guitars">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis voluptatem, sed natus repudiandae odio accusamus quae, eligendi earum amet nobis veritatis magnam fugiat aliquid a. Laborum veniam fugiat ratione quis quidem quo eveniet possimus officia commodi eaque iste non exercitationem et, dolorem cupiditate eligendi reprehenderit nemo dolorum incidunt labore error hic, explicabo eum sequi.</p>
+
+        </section>
+
+        <section class="sec-home">
+            <h3 class="h3-home">Flying V</h3>
+
+            <img class="img-guitars" src="img/home/flying-v.jpg" alt="Flying V">
+
+            <p class="p-guitars">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga impedit at recusandae sit consectetur veniam reprehenderit sequi. Eligendi molestias quaerat ex, eum tempora nisi porro aspernatur, molestiae perspiciatis beatae ab, nihil deserunt officiis numquam vel natus corporis? Voluptatum quidem reprehenderit necessitatibus a facere minus nisi suscipit id? Eveniet, accusamus voluptatem nemo consectetur eum asperiores dolorem aut commodi omnis, vel quo veniam deserunt ut illo nostrum adipisci eaque pariatur neque tempora consequuntur! Laudantium ad sint nam vero aspernatur illo eos dolorum?</p>
+                
+            <img id="flyv-collage" src="img/home/flying-v-collage.jpg" alt="flying-v-collage"> 
+                
+                
+            <p class="p-guitars">Consequatur quibusdam praesentium,error hic repudiandaeodit, pariatur alias harum facereprovident ipsumexercitationem cupiditate repellat quis,culpa estquidem. Optio quas voluptates quaeratexercitationemperspiciatis tempora maiores similiqueiusto nam fugiat,asperiores magnam dolorum distinctioperferendis quisminima nihil molestias rerum voluptatumpariatur. Earumdolores rerum saepe officiis odit facilistempore,sapiente, neque dolore nam quo? Rerum sunt veroitaquesoluta nihil delectus nulla architecto aliquamofficiisdistinctio. Quidem rem voluptatem tempora vel.</p>
+        </section>
+
+        <a href="#top" href="#h1-home" class="a-totop">Volver al inicio</a>
+
+    </main>
+
+    <footer>
+        <div class="links">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square i-footer"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square i-footer"></i></a>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fab fa-instagram-square i-footer"></i></a>
+        </div>
+
+        <p id="copyright">Copyright 2020 &copy; Joaquín Aliotta. Todos los derechos reservados.</p>
+    </footer>
+
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
